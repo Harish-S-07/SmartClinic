@@ -1,0 +1,63 @@
+# Ignore build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS-specific folders
+.vs/
+
+# Rider
+.idea/
+
+# DotCover
+*.dotCover
+
+# Logs
+*.log
+
+# Database files
+*.db
+*.sqlite
+*.mdf
+*.ldf
+
+# Secrets
+*.env
+*.secret
+secrets.json
+
+# EF Core Migrations metadata
+Migrations/_*.cs
+
+# Dependency caches
+packages/
+*.nupkg
+*.snupkg
+
+# Optional: node_modules (if you ever mix frontend code here)
+node_modules/
+
+# Optional: macOS/Linux system files
+.DS_Store
+Thumbs.db
+
+# GitHub-specific (if not used)
+.github/
+
+# Ignore test results
+TestResults/
+coverage/
+*.coverage
+*.trx
+
+# Ignore Publish folder if created
+publish/
+
+# JetBrains Rider
+.idea/
+*.sln.iml

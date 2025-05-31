@@ -16,6 +16,9 @@ namespace SmartClinic.Application.Mappings
             CreateMap<Patient, PatientDTO>().ReverseMap();
             CreateMap<CreatePatientRequest, Patient>();
             CreateMap<UpdatePatientRequest, Patient>();
+            CreateMap<Doctor, DoctorDTO>().ReverseMap();
+            CreateMap<CreateDoctorDTO, Doctor>();
+            CreateMap<UpdateDoctorDTO, Doctor>();
         }
     }
 }

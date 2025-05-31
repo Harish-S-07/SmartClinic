@@ -17,5 +17,6 @@ namespace SmartClinic.Infrastructure.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Patient> Patients { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
     }
 }

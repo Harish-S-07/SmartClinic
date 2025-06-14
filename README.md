@@ -1,105 +1,112 @@
-# 🏥 SmartClinic - Backend API
+**SmartClinic - Backend API**
 
-SmartClinic is a scalable hospital management system built with .NET Core using Clean Architecture. It focuses on key modules like authentication, doctor and patient management, appointment scheduling, and billing. The backend demonstrates best practices in modular design, secure authentication, and role-based access control.
+SmartClinic is a scalable hospital management system built with .NET Core using Clean Architecture. It focuses on essential modules such as authentication, doctor and patient management, appointment scheduling. The backend demonstrates best practices in modular design, secure authentication, and role-based access control.
 
-## 📁 Project Structure
+**Project Structure**
 
-- **SmartClinic.API** - Entry point (controllers, middleware, startup)
-- **SmartClinic.Application** - Business logic, services, DTOs
-- **SmartClinic.Domain** - Core models and enums
-- **SmartClinic.Infrastructure** - EF Core, DB context, data access
-- **SmartClinic.Tests** - Unit tests using xUnit
+- **SmartClinic.API** – Entry point (controllers, middleware, startup)
+- **SmartClinic.Application** – Business logic, services, DTOs
+- **SmartClinic.Domain** – Core models and enums
+- **SmartClinic.Infrastructure** – EF Core, DB context, data access
+- **SmartClinic.Tests** – Unit tests using xUnit
 
-## 👥 Stakeholders & Roles
+**Stakeholders and Roles**
 
-- **Admin**: Full control over users, doctors, and appointments
-- **Doctor**: View appointments and patient records
-- **Receptionist**: Manage scheduling and assist in patient registration
-- **Patient**: (Login functionality planned for future)
+- **Admin** – Full control over users, doctors, and appointments
+- **Doctor** – View appointments and patient records
+- **Receptionist** – Manage scheduling and assist in patient registration
+- **Patient** – Login functionality planned for future updates
 
-## ✅ Implemented Features
+**Implemented Features**
 
-- **Authentication**
-  - JWT-based login and registration
-  - Password hashing with BCrypt
-  - Role-based access using [Authorize]
+**Authentication**
 
-- **Doctor Module**
-  - Full CRUD operations
-  - PATCH support for status updates
-  - Soft delete with `IsActive` flag
-  - DTO mapping via AutoMapper
+- JWT-based login and registration
+- Password hashing with BCrypt
+- Role-based access using `[Authorize]` attributes
 
-- **User Module**
-  - Secure Admin-only access
-  - Role-based authorization
+**Doctor Module**
 
-- **EF Core Integration**
-  - Configured `SmartClinicDbContext` with SQL Server
-  - Migrations for schema creation
-  - Stable database connectivity
+- Full Create, Read, Update, Delete (CRUD) operations
+- PATCH support for status updates
+- Soft delete functionality using an `IsActive` flag
+- AutoMapper integration for clean DTO mapping
 
-- **Testing**
-  - Endpoints tested with Postman and Swagger
-  - Protected routes return 401 if unauthorized
+**User Module**
 
-## 🔐 Security & JWT
+- Secure Admin-only access to manage users
+- Role-based authorization for user-related endpoints
 
-- Strong 32+ character JWT secret key
-- Configured in `appsettings.json`
-- JWT middleware registered in `Program.cs`
-- Secure role-based endpoint protection
+**Appointment Module**
 
-## 🚧 Swagger
+- Create, update, and delete appointments
+- Retrieve appointments by ID, status, or assigned doctor
+- Role-based access for Admin and Receptionist roles
+- Enum support for appointment status (e.g., Scheduled, Completed)
+- Includes navigation properties for Doctor and Patient
 
-- Swagger UI enabled for API testing
-- JWT integration attempted (currently disabled for stability)
+**EF Core Integration**
 
-## ⚙️ Getting Started
+- SQL Server database configured through `SmartClinicDbContext`
+- Entity Framework Core migrations for schema creation and updates
+- Reliable and tested database connectivity
 
-### Prerequisites
+**Testing**
+
+- All endpoints tested using Postman and Swagger UI
+- Protected routes return appropriate 401 responses for unauthorized access
+
+**Security and JWT**
+
+- Uses a secure 32+ character secret key for JWT
+- JWT configuration set up in `appsettings.json`
+- Authentication middleware registered in `Program.cs`
+- Role-based endpoint protection using standard ASP.NET Core authorization
+
+**Getting Started**
+
+**Prerequisites**
 
 - .NET 8 SDK
 - SQL Server
-- Visual Studio / VS Code
+- Visual Studio or Visual Studio Code
 
-### Setup Instructions
+**Setup Instructions**
 
-1. Clone the repository  
-
-2. Navigate to project folder  
+1. Clone the repository
+2. Navigate to the project folder:  
    `cd SmartClinic`
-
-3. Update connection string in `appsettings.json`
-
-4. Apply EF Core migrations  
+3. Update the SQL Server connection string in `appsettings.json`
+4. Apply the EF Core migrations:  
    `dotnet ef database update --project SmartClinic.Infrastructure`
-
-5. Run the API  
+5. Run the API:  
    `dotnet run --project SmartClinic.API`
+6. Open Swagger UI to test endpoints:  
+   `https://localhost:{port}/swagger`
 
-6. Test endpoints via Swagger at `https://localhost:{port}/swagger`
+**Tech Stack**
 
-## 🛠 Tech Stack
+- **Backend:** ASP.NET Core (.NET 8)
+- **Architecture:** Clean Architecture
+- **Database:** SQL Server, Entity Framework Core
+- **Authentication:** JWT, BCrypt
+- **Testing:** Swagger, Postman, xUnit
+- **DevOps:** Azure Pipelines, GitHub Actions
+- **Version Control:** Git and GitHub
 
-- Backend: .NET 8 (C#)
-- Architecture: Clean Architecture
-- Database: SQL Server, Entity Framework Core
-- Authentication: JWT, BCrypt
-- Testing: Swagger, Postman, xUnit
-- DevOps: Azure & GitHub Actions
-- Version Control: Git + GitHub
+**Project Status**
 
-## 🚀 Project Status
+- Authentication, User, Doctor, and Appointment modules are complete
+- JWT-based authentication and role protection implemented
+- API functionality tested and stable
+- Upcoming: Billing module, Swagger-JWT token integration, Azure deployment
 
-- ✅ Auth, User, and Doctor modules complete
-- ✅ JWT-based auth and role protection in place
-- ✅ Stable API tested with Swagger/Postman
-- 🔄 Upcoming: Appointments, Billing, JWT-Swagger integration, Azure deployment
+**Author**
 
-## 👨‍💻 Author
+**Harish Shanmugavelan**  
 
-**[Harish Shanmugavelan]**  
 .NET Backend Developer (1.5+ years experience)  
-📧 iharish7810@gmail.com  
-🔗 [GitHub](https://github.com/Harish-07) • [LinkedIn](https://www.linkedin.com/in/harish-s-0887681ab)
+
+**Email:** iharish7810@gmail.com  
+**GitHub:** [https://github.com/Harish-S-07](https://github.com/Harish-S-07)  
+**LinkedIn:** [https://www.linkedin.com/in/harishshanmugavelan](https://www.linkedin.com/in/harishshanmugavelan)

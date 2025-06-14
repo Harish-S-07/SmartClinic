@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using SmartApplication.Domain.Entities;
-using SmartClinic.Application.Models;
+using SmartClinic.Application.Models.Appointment;
+using SmartClinic.Application.Models.Doctor;
+using SmartClinic.Application.Models.Patient;
 
 namespace SmartClinic.Application.Mappings
 {
@@ -19,6 +21,9 @@ namespace SmartClinic.Application.Mappings
             CreateMap<Doctor, DoctorDTO>().ReverseMap();
             CreateMap<CreateDoctorDTO, Doctor>();
             CreateMap<UpdateDoctorDTO, Doctor>();
+            CreateMap<Appointment, AppointmentDTO>().ReverseMap();
+            CreateMap<CreateAppointmentDTO, Appointment>();
+            CreateMap<UpdateAppointmentDTO, Appointment>();
         }
     }
 }

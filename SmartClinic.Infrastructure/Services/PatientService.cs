@@ -7,7 +7,7 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using SmartApplication.Domain.Entities;
 using SmartClinic.Application.Interfaces;
-using SmartClinic.Application.Models;
+using SmartClinic.Application.Models.Patient;
 using SmartClinic.Infrastructure.Data;
 
 namespace SmartClinic.Infrastructure.Services

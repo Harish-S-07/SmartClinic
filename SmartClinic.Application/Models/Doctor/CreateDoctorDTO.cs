@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartClinic.Application.Models
+namespace SmartClinic.Application.Models.Doctor
 {
-    public class UpdateDoctorDTO
+    public class CreateDoctorDTO
     {
         public string Name { get; set; } = string.Empty;
         public string Specialization { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
-        public string Phone { get; set; } = string.Empty;
+        public string PhoneNumber { get; set; } = string.Empty;
         public string? Bio { get; set; }
-        public bool IsActive { get; set; }
     }
 }

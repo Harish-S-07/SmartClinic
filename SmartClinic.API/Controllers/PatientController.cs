@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SmartClinic.Application.Interfaces;
-using SmartClinic.Application.Models;
+using SmartClinic.Application.Models.Patient;
 
 namespace SmartClinic.API.Controllers
 {

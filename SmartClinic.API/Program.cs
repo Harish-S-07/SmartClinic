@@ -6,6 +6,7 @@ using SmartClinic.Infrastructure.Data;
 using SmartClinic.Infrastructure.Services;
 using SmartClinic.Application.Mappings;
 using System.Text;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,8 +29,15 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPatientService, PatientService>();
 builder.Services.AddScoped<IDoctorService, DoctorService>();
+builder.Services.AddScoped<IAppointmentService, AppointmentService>();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
 
 builder.Services.AddAuthentication(options =>
 {

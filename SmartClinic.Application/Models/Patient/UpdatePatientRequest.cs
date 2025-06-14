@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartClinic.Application.Models
+namespace SmartClinic.Application.Models.Patient
 {
-    public class CreatePatientRequest
+    public class UpdatePatientRequest
     {
         public string FullName { get; set; } = string.Empty;
         public string Gender { get; set; } = string.Empty;

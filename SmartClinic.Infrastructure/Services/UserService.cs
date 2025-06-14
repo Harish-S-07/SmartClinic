@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using SmartClinic.Application.Interfaces;
-using SmartClinic.Application.Models;
+using SmartClinic.Application.Models.User;
 using SmartClinic.Infrastructure.Data;
 
 namespace SmartClinic.Infrastructure.Services

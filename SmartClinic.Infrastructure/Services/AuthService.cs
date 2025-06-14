@@ -11,6 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 using SmartApplication.Domain.Entities;
 using SmartClinic.Application.Interfaces;
 using SmartClinic.Application.Models;
+using SmartClinic.Application.Models.User;
 using SmartClinic.Infrastructure.Data;
 
 namespace SmartClinic.Infrastructure.Services

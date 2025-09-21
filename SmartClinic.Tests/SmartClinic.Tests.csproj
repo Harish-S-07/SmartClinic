@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SmartApplication.Domain\SmartApplication.Domain.csproj" />
+    <ProjectReference Include="..\SmartApplication.Domain\SmartClinic.Domain.csproj" />
     <ProjectReference Include="..\SmartClinic.Application\SmartClinic.Application.csproj" />
   </ItemGroup>
 

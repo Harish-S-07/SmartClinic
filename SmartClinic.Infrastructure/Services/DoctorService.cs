@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using SmartApplication.Domain.Entities;
+using SmartClinic.Domain.Entities;
 using SmartClinic.Application.Interfaces;
 using SmartClinic.Application.Models.Doctor;
 using SmartClinic.Infrastructure.Data;

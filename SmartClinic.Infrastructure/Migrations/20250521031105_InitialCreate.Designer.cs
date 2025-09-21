@@ -25,7 +25,7 @@ namespace SmartClinic.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("SmartApplication.Domain.Entities.User", b =>
+            modelBuilder.Entity("SmartClinic.Domain.Entities.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

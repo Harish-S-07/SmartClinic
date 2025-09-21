@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartClinic.API", "SmartCli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartClinic.Application", "SmartClinic.Application\SmartClinic.Application.csproj", "{7108A0EF-5BCC-4B8D-B58F-E209E6853136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartApplication.Domain", "SmartApplication.Domain\SmartApplication.Domain.csproj", "{F332D169-9CAA-4FFA-B6F1-B2DF82781230}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartClinic.Domain", "SmartApplication.Domain\SmartClinic.Domain.csproj", "{F332D169-9CAA-4FFA-B6F1-B2DF82781230}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartClinic.Infrastructure", "SmartClinic.Infrastructure\SmartClinic.Infrastructure.csproj", "{ED901A24-9BC4-46E5-AF38-75846DE7F307}"
 EndProject

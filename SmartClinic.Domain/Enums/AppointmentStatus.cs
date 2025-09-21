@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartApplication.Domain.Enums
+namespace SmartClinic.Domain.Enums
 {
     public enum AppointmentStatus
     {

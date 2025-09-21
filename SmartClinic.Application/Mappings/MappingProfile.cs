@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
-using SmartApplication.Domain.Entities;
+using SmartClinic.Domain.Entities;
 using SmartClinic.Application.Models.Appointment;
 using SmartClinic.Application.Models.Doctor;
 using SmartClinic.Application.Models.Patient;

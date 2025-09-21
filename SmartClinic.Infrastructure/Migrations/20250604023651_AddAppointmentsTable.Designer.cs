@@ -25,7 +25,7 @@ namespace SmartClinic.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("SmartApplication.Domain.Entities.Appointment", b =>
+            modelBuilder.Entity("SmartClinic.Domain.Entities.Appointment", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,7 +56,7 @@ namespace SmartClinic.Infrastructure.Migrations
                     b.ToTable("Appointments");
                 });
 
-            modelBuilder.Entity("SmartApplication.Domain.Entities.Doctor", b =>
+            modelBuilder.Entity("SmartClinic.Domain.Entities.Doctor", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -89,7 +89,7 @@ namespace SmartClinic.Infrastructure.Migrations
                     b.ToTable("Doctors");
                 });
 
-            modelBuilder.Entity("SmartApplication.Domain.Entities.Patient", b =>
+            modelBuilder.Entity("SmartClinic.Domain.Entities.Patient", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -119,7 +119,7 @@ namespace SmartClinic.Infrastructure.Migrations
                     b.ToTable("Patients");
                 });
 
-            modelBuilder.Entity("SmartApplication.Domain.Entities.User", b =>
+            modelBuilder.Entity("SmartClinic.Domain.Entities.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -146,15 +146,15 @@ namespace SmartClinic.Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("SmartApplication.Domain.Entities.Appointment", b =>
+            modelBuilder.Entity("SmartClinic.Domain.Entities.Appointment", b =>
                 {
-                    b.HasOne("SmartApplication.Domain.Entities.Doctor", "Doctor")
+                    b.HasOne("SmartClinic.Domain.Entities.Doctor", "Doctor")
                         .WithMany()
                         .HasForeignKey("DoctorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SmartApplication.Domain.Entities.Patient", "Patient")
+                    b.HasOne("SmartClinic.Domain.Entities.Patient", "Patient")
                         .WithMany()
                         .HasForeignKey("PatientId")
                         .OnDelete(DeleteBehavior.Cascade)

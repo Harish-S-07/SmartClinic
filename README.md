@@ -2,6 +2,10 @@
 
 SmartClinic is a scalable hospital management system built with .NET Core using Clean Architecture. It focuses on essential modules such as authentication, doctor and patient management, appointment scheduling. The backend demonstrates best practices in modular design, secure authentication, and role-based access control.
 
+**Demo Video**
+
+- **Smartclinic** - [Smartclinic Demo](https://drive.google.com/file/d/15av5ZBjQlaGRrqAWCqRQwhh5iwTg4Cv3/view?usp=sharing)
+
 **Project Structure**
 
 - **SmartClinic.API** – Entry point (controllers, middleware, startup)

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using SmartApplication.Domain.Entities;
+using SmartClinic.Domain.Entities;
 using SmartClinic.Application.Interfaces;
 using SmartClinic.Application.Models;
 using SmartClinic.Application.Models.User;
